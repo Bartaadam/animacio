@@ -1,0 +1,31 @@
+
+#mainlap{
+	overflow:hidden;
+	position:relative;	
+	margin:auto;
+	height:330px;
+	width:600px;	
+}
+#taj{
+	position:absolute;
+	z-index:-1;
+	left:100px;
+	height:330px;
+	width:600px;
+}
+
+#taj2{
+	position:absolute;
+	z-index:-1;
+	left:600px;
+	height:330px;
+	width:600px;
+
+}
+
+#auto{
+	position:absolute;
+
+	z-index:0;
+
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <title>
+           Animáció
+        </title>
+        <link rel="stylesheet" href="animacio.css" />      
+        <meta charset="utf-8" />
+    </head>
+    <body>
+        <div id="mainlap">			
+			<img id="taj" src="hatter.jpg"/>
+			<img id="taj2" src="hatter.jpg"/>	
+			<img id="auto" src="auto2.png">											
+		 <script type="text/javascript">
+			var taj=document.getElementById("taj");
+			var taj2=document.getElementById("taj2");			
+			var szam=0;
+			var szam2=600;
+			var karsz=0;
+			var frame=0;			
+			var idozit=0;	
+			var t1;
+			var t2;
+					
+			t1=setInterval(mozgas,10);			
+			t2=setInterval(kar,200);			
+						
+			function kar(){					
+			if(karsz%2==0)
+			{
+				auto.src="auto.png";
+			}else
+			{
+				auto.src="auto2.png";
+			}	
+			karsz++;			
+			if(karsz==2)
+				{
+				karsz=0
+				}	
+			frame++;		
+			}
+			
+			function mozgas()
+			{						
+			szam2--;
+			szam--;
+			taj.style.left=szam+"px";
+			taj2.style.left=szam2+"px";					
+			if(szam<=-600)
+			{
+			szam=600;
+			}
+			if(szam2<=-600)
+			{
+			szam2=600;
+			}
+			}
+			
+        </script>				
+		</div>	
+    </body>
+</html>
